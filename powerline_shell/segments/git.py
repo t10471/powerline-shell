@@ -101,5 +101,6 @@ class Segment(ThreadedSegment):
             symbol = RepoStats().symbols["git"] + " "
         else:
             symbol = ""
-        self.powerline.append(" " + symbol + self.branch + " ", fg, bg)
+        self.powerline.append(" " + symbol + " ", fg, bg)
+        # self.powerline.append(" " + symbol + self.branch + " ", fg, bg)
         self.stats.add_to_powerline(self.powerline)
